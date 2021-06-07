@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Intrution Detection System</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <h1>Intrution Detection System</h1>
+        
+        <!-- Element for satellite map -->
+        <iframe id = "mapWeb" width="340px" height="340px"></iframe>
+
+        <!-- Element for green radar (canvas is used for drawing capabilities) -->
+        <canvas id="canvas" style="background: url('./radar.png')"></canvas>
+     
+        <!-- Element for embedding youtube stream -->
+        <iframe src="https://www.youtube.com/embed/VGbIgif6yJE" frameborder="0" allowfullscreen 
+                width="340px" height="340px">
+        </iframe>
+        
+        <!-- Textbox for logging alerts -->
+        <div> 
+        <textarea id="textBox" name="logbox" rows="20" cols="146"></textarea>
+        </div>
+        
+        <!-- Sources -->
+        <script src = "https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script> 
+        <script src = "https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+        <script src = "https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script> 
+        <script src = "https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="logic.js"></script>
+       
+    </body>
+</html>
